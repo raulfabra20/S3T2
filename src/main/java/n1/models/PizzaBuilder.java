@@ -1,9 +1,9 @@
 package n1.models;
 
-public interface PizzaBuilder<T> {
-   public PizzaBuilder<T>  setSize(String optionSize);
-   public PizzaBuilder<T> setDough(String optionDough);
-   T build();
+public interface PizzaBuilder {
+   public PizzaBuilder  setSize(String optionSize);
+   public PizzaBuilder setDough(String optionDough);
+   Pizza build();
 
    String getSize();
    String getDough();

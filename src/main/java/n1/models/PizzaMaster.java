@@ -1,9 +1,9 @@
 package n1.models;
 
 public class PizzaMaster {
-    private final PizzaBuilder<Pizza> pizzaBuilder;
+    private final PizzaBuilder pizzaBuilder;
 
-    public PizzaMaster(PizzaBuilder<Pizza> pizzaBuilder) {
+    public PizzaMaster(PizzaBuilder pizzaBuilder) {
         this.pizzaBuilder = pizzaBuilder;
     }
 

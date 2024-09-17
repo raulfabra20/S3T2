@@ -7,30 +7,30 @@ import java.util.ArrayList;
 public class ShoeStore {
 
     public static void storeApp(){
-        ArrayList<Product> catalog = new ArrayList<>();
+        ArrayList<Shoe> catalog = new ArrayList<>();
         PaymentGateway paymentGateway = new PaymentGateway();
 
         Client client1 = new Client();
         Client client2 = new Client();
         Client client3 = new Client();
 
-        Product product1 = new Product("1", "Converse,Black, 42", 60);
-        Product product2 = new Product("2", "Adidas, Gezelle, 40", 100);
-        Product product3 = new Product("3", "Nike, Uptempo, 39", 150);
-        Product product4 = new Product("4", "Nike, Airmax, 40", 90);
-        Product product5 = new Product("5", "Buffalo, Black, 42", 170);
+        Shoe shoe1 = new Shoe("1", "Converse,Black, 42", 60);
+        Shoe shoe2 = new Shoe("2", "Adidas, Gezelle, 40", 100);
+        Shoe shoe3 = new Shoe("3", "Nike, Uptempo, 39", 150);
+        Shoe shoe4 = new Shoe("4", "Nike, Airmax, 40", 90);
+        Shoe shoe5 = new Shoe("5", "Buffalo, Black, 42", 170);
 
-        catalog.add(product1);
-        catalog.add(product2);
-        catalog.add(product3);
-        catalog.add(product4);
-        catalog.add(product5);
+        catalog.add(shoe1);
+        catalog.add(shoe2);
+        catalog.add(shoe3);
+        catalog.add(shoe4);
+        catalog.add(shoe5);
 
         //client1 purchase:
         System.out.println("Client 1:");
-        client1.addProduct(product2);
-        client1.addProduct(product5);
-        client1.addProduct(product4);
+        client1.addProduct(shoe2);
+        client1.addProduct(shoe5);
+        client1.addProduct(shoe4);
 
         client1.getNameProducts();
         client1.getPriceProducts();
@@ -40,8 +40,8 @@ public class ShoeStore {
 
         //client2 purchase:
         System.out.println("Client 2:");
-        client2.addProduct(product2);
-        client2.addProduct(product3);
+        client2.addProduct(shoe2);
+        client2.addProduct(shoe3);
 
         client2.getNameProducts();
         client2.getPriceProducts();
@@ -52,9 +52,9 @@ public class ShoeStore {
 
         //client3 purchase:
         System.out.println("Client 3:");
-        client3.addProduct(product1);
-        client3.addProduct(product3);
-        client3.addProduct(product5);
+        client3.addProduct(shoe1);
+        client3.addProduct(shoe3);
+        client3.addProduct(shoe5);
 
         client3.getNameProducts();
         client3.getPriceProducts();

@@ -4,29 +4,29 @@ import java.util.ArrayList;
 
 public class Client {
 
-    private ArrayList<Product> products;
+    private ArrayList<Shoe> shoes;
 
     public Client() {
-        this.products = new ArrayList<>();
+        this.shoes = new ArrayList<>();
     }
 
-    public void addProduct(Product product){
-        products.add(product);
+    public void addProduct(Shoe shoe){
+        shoes.add(shoe);
     }
 
-    public void removeProduct(Product product){
-        products.remove(product);
+    public void removeProduct(Shoe shoe){
+        shoes.remove(shoe);
     }
 
     public void getNameProducts(){
         System.out.println("Product/s added to the cart: ");
-        products.forEach(p -> System.out.println(p.getName()));
+        shoes.forEach(p -> System.out.println(p.getName()));
     }
 
     public void getPriceProducts(){
        int totalPrice = 0;
-        for(Product  product : products){
-            totalPrice += product.getPrice();
+        for(Shoe shoe : shoes){
+            totalPrice += shoe.getPrice();
         }
         System.out.println("Total price : "+totalPrice+" €");
     }

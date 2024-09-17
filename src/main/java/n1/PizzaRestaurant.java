@@ -22,21 +22,21 @@ public class PizzaRestaurant {
                 String optionDough = getDoughPizza();
                 switch (optionPizza) {
                     case 1:
-                        PizzaBuilder<Pizza> hawaiianBuilder = new HawaiianPizzaBuilder().setSize(optionSize)
+                        PizzaBuilder hawaiianBuilder = new HawaiianPizzaBuilder().setSize(optionSize)
                                 .setDough(optionDough);
                         PizzaMaster pizzaMaster = new PizzaMaster(hawaiianBuilder);
                         Pizza hawaiianPizza = pizzaMaster.makePizza();
                         System.out.println("Hawaiian pizza ready: " + hawaiianPizza.toString());
                         break;
                     case 2:
-                        PizzaBuilder<Pizza> vegetarianBuilder = new VegetarianPizzaBuilder().setSize(optionSize)
+                        PizzaBuilder vegetarianBuilder = new VegetarianPizzaBuilder().setSize(optionSize)
                                 .setDough(optionDough);
                         pizzaMaster = new PizzaMaster(vegetarianBuilder);
                         Pizza vegetarianPizza = pizzaMaster.makePizza();
                         System.out.println("Vegetarian pizza ready: " + vegetarianPizza.toString());
                         break;
                     case 3:
-                        PizzaBuilder<Pizza> diavoloBuilder = new DiavoloPizzaBuilder().setSize(optionSize)
+                        PizzaBuilder diavoloBuilder = new DiavoloPizzaBuilder().setSize(optionSize)
                                 .setDough(optionDough);
                         pizzaMaster = new PizzaMaster(diavoloBuilder);
                         Pizza diavoloPizza = pizzaMaster.makePizza();
