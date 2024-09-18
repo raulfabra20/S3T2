@@ -2,11 +2,11 @@ package n3.models;
 
 import java.util.ArrayList;
 
-public class Client {
+public class Ticket {
 
     private ArrayList<Shoe> shoes;
 
-    public Client() {
+    public Ticket() {
         this.shoes = new ArrayList<>();
     }
 
